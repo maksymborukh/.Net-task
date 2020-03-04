@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathInJson.WPF", "PathInJson.WPF\PathInJson.WPF.csproj", "{9A07942B-6F7E-4E93-86FD-99687CBD9BD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathInJson.WPF", "PathInJson.WPF\PathInJson.WPF.csproj", "{9A07942B-6F7E-4E93-86FD-99687CBD9BD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathInJson.Tests", "PathInJson.Tests\PathInJson.Tests.csproj", "{4CACFA3A-1D62-48E3-BA33-9BB535B0AEC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9A07942B-6F7E-4E93-86FD-99687CBD9BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A07942B-6F7E-4E93-86FD-99687CBD9BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A07942B-6F7E-4E93-86FD-99687CBD9BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CACFA3A-1D62-48E3-BA33-9BB535B0AEC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CACFA3A-1D62-48E3-BA33-9BB535B0AEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CACFA3A-1D62-48E3-BA33-9BB535B0AEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CACFA3A-1D62-48E3-BA33-9BB535B0AEC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

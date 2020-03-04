@@ -2,7 +2,6 @@
 using PathInJson.WPF.Helpers;
 using PathInJson.WPF.Models;
 using System.Collections.ObjectModel;
-using System.Collections.Specialized;
 using System.IO;
 using System.Windows;
 using System.Windows.Input;
@@ -13,6 +12,7 @@ namespace PathInJson.WPF.ViewModels
     {
         private FolderHelper _folderHelper;
         private JsonHelper _jsonHelper;
+
         public ObservableCollection<FolderViewModel> Items { get; set; }
 
         private string _path;
@@ -38,7 +38,7 @@ namespace PathInJson.WPF.ViewModels
             }
         }
 
-        public ICommand ClearCommand { get; set; }  
+        public ICommand ClearCommand { get; set; }
         public ICommand SaveCommand { get; set; }
         public ICommand LoadCommand { get; set; }
         public ICommand SelectedItemChangedCommand { get; set; }
@@ -106,17 +106,7 @@ namespace PathInJson.WPF.ViewModels
         {
             if (JsonText != string.Empty && Path != string.Empty)
             {
-                MessageBoxResult result = MessageBox.Show("File will be saved to " + Path + " directory", "PathInJson", MessageBoxButton.YesNoCancel);
-                switch (result)
-                {
-                    case MessageBoxResult.Yes:
-                        _jsonHelper.WriteToFile(Path, JsonText);
-                        break;
-                    case MessageBoxResult.No:
-                        break;
-                    case MessageBoxResult.Cancel:
-                        break;
-                }
+                _jsonHelper.WriteToFile(Path, JsonText);
             }
             else
             {
@@ -147,7 +137,7 @@ namespace PathInJson.WPF.ViewModels
                 DirectoryItem item = new DirectoryItem(drive, drive);
                 FolderViewModel folder = new FolderViewModel(item);
                 Items.Add(folder);
-            }         
+            }
         }
     }
 }
