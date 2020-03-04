@@ -1,4 +1,4 @@
-﻿namespace PathInJson.WPF.Model
+﻿namespace PathInJson.WPF.Entities
 {
     public class File
     {

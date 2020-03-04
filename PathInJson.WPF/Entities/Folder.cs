@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PathInJson.WPF.Model
+namespace PathInJson.WPF.Entities
 {
     public class Folder
     {

@@ -1,8 +1,8 @@
-﻿using PathInJson.WPF.Model;
+﻿using PathInJson.WPF.Entities;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using File = PathInJson.WPF.Model.File;
+using File = PathInJson.WPF.Entities.File;
 
 namespace PathInJson.WPF.Helpers
 {
